@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(400, 400, WEBGL);
+  createCanvas(400, 400);
 }
 
 function draw() {
@@ -11,7 +11,7 @@ function draw() {
   //The Letter
   fill("#eee");
   stroke("#888");
-  rotateY(frameCount * 0.01);
+  translate (200,200);
   rect(0,0,300,200);
 
   //Top Left Thick Line 
@@ -32,11 +32,12 @@ function draw() {
 
   //Bottom of Heart(triangle)
   fill("#d61a03");
-  triangle(-74,-50,0,55,74,-50);
+  stroke("#d61a03");
+  triangle(-69,-50,0,50,69,-50);
 
   //Heart Side 1
-  ellipse (-70,-74,74,50);
+  ellipse (-70,-80,74,47);
   
   //Heart Side 2 
-  ellipse (0,-74,70,50);
+  ellipse (0,-80,70,47);
 }
