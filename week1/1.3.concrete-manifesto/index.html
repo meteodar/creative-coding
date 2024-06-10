@@ -6,7 +6,14 @@
     <!--
         Use this page to complete the "Concrete Manifesto" exercise:
         https://canvas.umw.edu/courses/1498218/assignments/11723270
-    -->  
+
+       I chose the quote from the designifestos.org website, specifically from the "Space Popular: Threaded Thresholds – The Fabric of Civic Teleportation" manifesto. Thresholds and liminality are very fascinating concepts to me and the manifesto weaves those two concepts with digital media and explores possible visions for the future and how physical and digital thresholds are influx and will continue to be as immersive high-technology continues to be explored. I wanted the environments button to act as a door to these other environments that are "contained within." My goal is that each time the button is clicked the word "environments" appears in a new style. At first this is exciting so the button is pressed a few more times, but as the participant realizes that these other environments are not going away the initial excitement might be replaced with dread and to the least annoyance. To me this exercise was my way of reflecting on my usage of social media and all the environments that it allows me to access without needing to physically move much; how it is exciting, but can be overwhelming if you spend hours and hours online. Furthermore, I wanted each new “environments” to remain on the page as a way to bring awareness to the time spent on the webpage clicking and to be mindful of our footprint online - all the places we've visited while browsing digitally. 
+
+       I used the following websites to complete this assignmnet:
+       https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
+       https://www.w3schools.com/js/js_htmldom_elements.asp
+
+    -->
 
     <style type="text/css">
 
@@ -34,6 +41,12 @@
         #teleport:hover{
             cursor: pointer;
 
+        #ENVIRONMENTS {
+            position: ;
+            font-size: ;
+
+        }
+
         }
 
     </style>
@@ -41,22 +54,19 @@
 <body>
 
     <p>
-    Teleport Between <button>Environments</button> Contained Within.
+    Teleport Between <button id="teleport">Environments</button> Contained Within.
     </p>
-    
-    <button id="teleport"></button>
-
-    
+     
 
 <script type="text/javascript">
   let t = document.getElementById("teleport");
 
   t.onclick = function  (){
   let newE = document.createElement("div");
-  NewE = /* new location*/
-
-
-    //pending//.appendChild("div");
+  let message = document.createTextNode("ENVIRONMENTS");
+  newE.appendChild(message);
+  document.body.appendChild(newE);
+  
 
 
   };

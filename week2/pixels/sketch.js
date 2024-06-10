@@ -13,10 +13,11 @@ function setup() {
 
 function draw() {
   background(220);
-image(img,10,10,100,100);
+
+  image(img,10,10,100,100);
 
 for (let x = 0; x <= img.width; x += sampleX){
-  for (let y = o; y <= img.height; y += sampleY){
+  for (let y = 0; y <= img.height; y += sampleY){
     var index = (x + y * img.width) * 4;
     var r = img.pixles[index + 0];
     var g = img.pixels[index + 1];
