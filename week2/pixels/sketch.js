@@ -1,9 +1,9 @@
 let img;
-//let sampleX = 50;
-//let sampleY = 50; 
+let sampleX = 50;
+let sampleY = 50; 
 
 function preload(){
-  img = loadImage('https://meteodar.github.io/creative-coding/week2/pixels/pointingspider.jpg');
+  img = loadImage('');
 
 }
 
