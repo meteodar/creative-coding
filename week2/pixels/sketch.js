@@ -1,37 +1,35 @@
-let img;
-let sampleX = 50;
-let sampleY = 50; 
 
-function preload(){
-  img = loadImage('');
+let img; 
+let sampleX = 50;
+let sampleY = 50;
+
+function preload() {
+  img = loadImage('https://meteodar.github.io/creative-coding/week2/pixels/pointing_spider.JPG');
 
 }
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(850, 850);
   img.loadPixels();
-
+  noLoop();
+  
 }
 
 function draw() {
-  background(220);
+  background(250);
   
-  translate(100,100); 
-  image(img, 0, 0);
+  translate (15, 200);
+  //image(img, 0, 0);
 
-//for (let x = 0; x <= img.width; x += sampleX){
- // for (let y = 0; y <= img.height; y += sampleY){
-  //  var index = (x + y * img.width) * 4;
-   // var r = img.pixels[index + 0];
-   // var g = img.pixels[index + 1];
-   // var b = img.pixels[index + 2];
-    
-   // fill(r,g,b);
-   //text("👉", x, y, sampleX, sampleY);
+//defining parameters
+  for (let x = 0; x <= img.width; x += sampleX){
+    for (let y = 0; y <= img.height; y += sampleY){
  
-
-    //text("🕷", 0, 100);
-
+        //custom pixels
+        textSize(25);
+        text(random(["👉","👈","👆","👇","🕷"]),x,y, sampleX, sampleY);
+        
+    } 
   }
-//}
-//}
+
+}
