@@ -32,7 +32,7 @@ function draw() {
      translate(x * random(-20,-60), y * random(-20,-60));
 
      //foreground squares qualities
-     stroke(c);
+     stroke(random([c,"#d05098","#d77e35","#d74941"]));
      c.setAlpha(random(20,200));
      fill("#ede8e6");
 
