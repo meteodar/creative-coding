@@ -19,7 +19,13 @@
 
     <style type="text/css">
 
+       /* fonts from https://fonts.google.com/selection/embed */
         @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+    
+        @import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cairo:wght@200..1000&family=Tiny5&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cairo:wght@200..1000&family=Satisfy&family=Tiny5&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cairo:wght@200..1000&family=Changa:wght@200..800&family=Satisfy&family=Tiny5&display=swap');
 
         p {
             align-content: center;
@@ -28,14 +34,14 @@
             left: 150px; 
             right:150px;
             font-family: monospace;
-            font-size: 48px;
+            font-size: 42px;
         }
         
         
         button {
             background: clear;
             margin: -8px;
-            paddinh: 12px;
+            padding: 5px;
             font-family: "Teko", sans-serif;
             font-size: 48px;
         }
@@ -43,11 +49,6 @@
         #teleport:hover{
             cursor: pointer;
 
-        #ENVIRONMENTS {
-            position: ;
-            font-size: ;
-
-        }
 
         }
 
@@ -56,7 +57,9 @@
 <body>
 
     <p>
-    Teleport Between <button id="teleport">Environments</button> Contained Within.
+    Teleport Between 
+    <button id="teleport">Environments</button> 
+    Contained Within.
     </p>
      
 
@@ -66,8 +69,29 @@
   t.onclick = function  (){
   let newE = document.createElement("div");
   let message = document.createTextNode("ENVIRONMENTS");
+
+    newE.style.position = "absolute";
+
+  let top_offset = Math.floor(Math.random() * window.innerHeight);
+  let left_offset = Math.floor(Math.random() * window.innerWidth);
+  
+
+  newE.style.top = top_offset + "px";
+  newE.style.left = left_offset + "px";
+  
+  //I refered to https://www.educative.io/answers/how-to-generate-a-random-color-in-javascript and https://css-tricks.com/snippets/javascript/random-hex-color/ to create and understand how the color function should be created. 
+  let colorChange = Math.floor(Math.random()*16777215).toString(16);
+    newE.style.color = "#" + colorChange;
+
+  // I refered to https://stackoverflow.com/questions/21862759/how-do-i-generate-a-random-font-to-a-line-of-text-every-time-page-is-refreshed to create the font change function
+  let fonts = ["Teko","Tiny5","Abril","satisfy","Changa","Cairo"];
+  let fontChange = fonts[Math.floor(Math.random()* fonts.length)];
+    newE.style.fontFamily = fontChange;
+ 
+
   newE.appendChild(message);
   document.body.appendChild(newE);
+
   
 
 
