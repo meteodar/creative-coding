@@ -5,9 +5,10 @@ let x = 0;
 let y = 0;
 let d = sqrt((x - mouseX)**2 + (y - mouseY)**2);
 
-//https://www.hiclipart.com/free-transparent-background-png-clipart-hpvxw#google_vignette
+//Background - https://www.cgtrader.com/gallery/project/ratatouille-kitchen
+//Remy - https://www.hiclipart.com/free-transparent-background-png-clipart-hpvxw#google_vignette
 function preload() {
-  image = loadImage()
+  image = loadImage('https://meteodar.github.io/creative-coding/week3/3.2.follower/ratatouille_remy.jpg');
 }
 
 function setup() {
