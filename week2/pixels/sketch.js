@@ -20,7 +20,7 @@ function setup() {
 function draw() {
   background(250);
   
-  translate (35, 200);
+  translate (25, 200);
   //image(img, 0, 0);
 
 //defining parameters
