@@ -29,7 +29,7 @@ function draw() {
 
 
      //distance between squares
-     translate(x * random(-20,-65), y * random(-25,-65));
+     translate(x * random(-25,-65), y * random(-25,-65));
 
      //foreground squares qualities
      stroke(random([c,"#d05098","#d77e35","#d74941"]));
