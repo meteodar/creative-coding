@@ -10,16 +10,22 @@
         Use this page to complete the "Data Self Portrait" project:
         https://canvas.umw.edu/courses/1498218/assignments/11723291
     -->  
-    <img src= "https://https://meteodar.github.io/creative-coding/week1/self-portrait/June6.jpg" alt= "Friday June 6.">
-
-    <img src= "https://meteodar.github.io/creative-coding/week1/self-portrait/June7.jpg">
-
-    <img src= "https://meteodar.github.io/creative-coding/week1/self-portrait/June10.jpg">
-
-     
-    
     <style type="text/css">
+        
+        #map1 {
+            height: auto;
+            max-width: 100%;
 
+        }
+        #map2 {
+            height:auto;
+            max-width: 100%;
+        }
+
+         #map3 {
+            height:auto;
+            max-width: 100%;
+         }
     
 
     </style>
@@ -27,6 +33,39 @@
 </head>
 <body>
 
+   June 6 map
+    <img id= "map1" src= "https://meteodar.github.io/creative-coding/week1/self-portrait/June6.jpg" alt= "Friday June 6.">
+    <img id= "start1" src= "" alt= "day 1 photo 1" usemap="#June6">
+    <imag id= "first_photo1" src="" alt="" usemap="#June6">
+    <img id= "second_photo1" src="" alt="" usemap="June6"> 
+
+    <map id="June6">
+        <area shape="circle" coord="centerofcircle,(x,y), radius)"href="start1">
+        <area shape="circle" coord="" href="first_photo1">
+        <area shape="circle" coord="" href="second_photo1">
+
+
+   /*June 7 map*/
+    <img id= "map2" src= "https://meteodar.github.io/creative-coding/week1/self-portrait/June7.jpg" alt= "Saturday June 7" usemap="June7">
+    <img id= "start2" src= "" alt="" usemap="June7">
+    <img id= "first_photo2" src="" alt="" usemap="June7">
+    <img id= "second_photo2" src="" alt="" usemap="June7">
+    <img id= "end_photo" src="" alt="" usemap="June7">
+
+    <map id="June7">
+        <area shape="circle" coord="centerofcircle,(x,y), radius)"href="start2">
+        <area shape="circle" coord="" href="first_photo2">
+        <area shape="circle" coord="" href="second_photo2">
+        <area shape="circle" coord="" href="end_photo">
+
+    /*June 10 map*/
+    <img id= "map3" src= "https://meteodar.github.io/creative-coding/week1/self-portrait/June10.jpg" alt= "Monday June 10" usemap="June10">
+    <img id= "start3" src="" alt="" usemap="June10">
+    <img id= "end photo2" src="" alt="" usemap="June10">
+
+    <map id="June10">
+        <area shape="circle" coord="centerofcircle,(x,y), radius)"href="start3">
+        <area shape="circle" coord="" href="end_photo2">
 
 </body>
 </html> 
