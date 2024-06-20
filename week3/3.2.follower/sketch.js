@@ -5,6 +5,8 @@ let x = 0;
 let y = 0;
 let d = 0;
 let score = 0;
+let xsafezone = 0;
+let ysafezone = 0;
 let debug = true;
 
 //Background - https://www.cgtrader.com/gallery/project/ratatouille-kitchen
@@ -39,8 +41,7 @@ x += xspeed;
 y += yspeed;
 
 //tomato
-image(tomato, x - 49, y - 108);
-tomato.resize(80,80)
+image(tomato, x - 57, y - 57);
 
 
 if (mouseX > x){
@@ -56,7 +57,7 @@ if (mouseX > x){
  }
 
  if (d < 80 ){
-  score += 1;
+  score -= 1;
   x = random(width);
   y = random(height);
 
