@@ -29,7 +29,7 @@ function setup() {
 
 function draw() {
 background(kitchen);
-cursor('https://meteodar.github.io/creative-coding/week3/3.2.follower/tomato.png');
+cursor('https://meteodar.github.io/creative-coding/week3/3.2.follower/Remy.png');
 
 //distance formula
 let d = sqrt((x - mouseX)**2 + (y - mouseY)**2);
@@ -39,8 +39,8 @@ x += xspeed;
 y += yspeed;
 
 //tomato
-image(remy, x - 49, y - 108);
-
+image(tomato, x - 49, y - 108);
+tomato.resize(80,80)
 
 
 if (mouseX > x){
